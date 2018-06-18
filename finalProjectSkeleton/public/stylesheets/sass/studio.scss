@@ -1,0 +1,307 @@
+
+$greyish: #333;
+body {
+  margin: 0;
+	padding: 50px;
+	background:black ;
+	right: 0;
+	left: 0;
+	color:  #cccccc;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h1 {
+  font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+	font-size: 100px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+  text-align: center;
+  }
+
+
+
+.column{
+
+  width:535px;
+  height:400px;
+  padding:24px;
+  margin:auto;
+  display: inline-block;
+
+}
+
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+
+img{
+  height: 300px;
+  width: 400px;
+  padding:10px;
+  display:block;
+   margin:auto;
+}
+
+
+.fadeIn {
+
+        opacity:0;
+        -webkit-animation:fadeIn ease-in 1;
+        -moz-animation:fadeIn ease-in 1;
+        -o-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+        -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        -o-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+}
+
+/* Animation Times - Time for image to fade in
+---------------------------------------------------- */
+.fadeIn-3s {
+        -webkit-animation-duration:3s;
+        -moz-animation-duration:3s;
+        -o-animation-duration:3s;
+        animation-duration:3s;
+}
+
+
+/* Key Frames for fade in */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+  .grow {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+
+.grow:hover {
+  -webkit-transform:scale(1.3);
+  -moz-transform:scale(1.3);
+  -ms-transform:scale(1.3);
+  -o-transform:scale(1.3);
+  transform:scale(1.3);
+}
+
+
+//link for back to homepage
+#backToHome{
+    text-align: center;
+      nav a {
+          position: relative;
+          display: inline-block;
+          margin: 12px 20px;
+          outline: none;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 400;
+          text-shadow: 0 0 1px rgba(255,255,255,0.3);
+          font-size: 16px;
+
+      }
+
+      nav a:hover,
+      nav a:focus {
+          outline: none;
+      }
+
+      .homePageClass a {
+          padding: 0 20px;
+          height: 45px;
+          line-height: 45px;
+      }
+
+      .homePageClass a::before,
+      .homePageClass a::after {
+          position: absolute;
+          width: 45px;
+          height: 2px;
+          background: #fff;
+          content: '';
+          opacity: 0.2;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
+          pointer-events: none;
+      }
+
+      .homePageClass a::before {
+          top: 0;
+          left: 0;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          transform: rotate(90deg);
+          -webkit-transform-origin: 0 0;
+          -moz-transform-origin: 0 0;
+          transform-origin: 0 0;
+      }
+
+      .homePageClass a::after {
+          right: 0;
+          bottom: 0;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          transform: rotate(90deg);
+          -webkit-transform-origin: 100% 0;
+          -moz-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+      }
+
+      .homePageClass a:hover::before,
+      .homePageClass a:hover::after,
+      .homePageClass a:focus::before,
+      .homePageClass a:focus::after {
+          opacity: 1;
+      }
+
+      .homePageClass a:hover::before,
+      .homePageClass a:focus::before {
+          left: 50%;
+          -webkit-transform: rotate(0deg) translateX(-50%);
+          -moz-transform: rotate(0deg) translateX(-50%);
+          transform: rotate(0deg) translateX(-50%);
+      }
+
+      .homePageClass a:hover::after,
+      .homePageClass a:focus::after {
+          right: 50%;
+          -webkit-transform: rotate(0deg) translateX(50%);
+          -moz-transform: rotate(0deg) translateX(50%);
+          transform: rotate(0deg) translateX(50%);
+      }
+
+}
+
+
+//link with flip style
+#HomePage{
+
+    nav a {
+        position: relative;
+        display: inline-block;
+        margin: 55px 25px;
+        outline: none;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 0 0 1px rgba(255,255,255,0.3);
+        font-size: 1.35em;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        outline: none;
+    }
+
+    .homepage a {
+        line-height: 2em;
+        -webkit-perspective: 800px;
+        -moz-perspective: 800px;
+        perspective: 800px;
+    }
+
+    .homepage a span {
+        position: relative;
+        display: inline-block;
+        padding: 3px 15px 0;
+        background: $greyish;
+        box-shadow: inset 0 3px #2f4351;
+        -webkit-transition: background 0.6s;
+        -moz-transition: background 0.6s;
+        transition: background 0.6s;
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 0% 50%;
+        -moz-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+    }
+
+    .homepage a span::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        color: #2f4351;
+        content: attr(data-hover);
+        -webkit-transform: rotateX(270deg);
+        -moz-transform: rotateX(270deg);
+        transform: rotateX(270deg);
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        transform-origin: 0 0;
+        pointer-events: none;
+    }
+
+    .homepage a:hover span,
+    .homepage a:focus span {
+        background: #2f4351;
+    }
+
+    .homepage a:hover span::before,
+    .homepage a:focus span::before {
+        -webkit-transform: rotateX(10deg);
+        -moz-transform: rotateX(10deg);
+        transform: rotateX(10deg);
+    }
+
+}
+
+
+////////////////////////////////////////////////////blurr image////////////////////////////////////
+.blur img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+//image will be blurry when non mouseover
+.blur img {
+  -webkit-filter: blur(5px);
+}
+
+//clear image when hover over
+.blur img:hover {
+  -webkit-filter: blur(0px);
+}
+
+/////////////////////////////black and white///////////////////////////////////////
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.bw {
+  -webkit-filter: grayscale(100%);
+}
+
+.bw:hover {
+  -webkit-filter: grayscale(0%);
+}

@@ -1,0 +1,95 @@
+/*body of everything*/
+body {
+  margin: 0;
+	padding: 50px;
+	background: #181818 url(Images/background.png) repeat center top;
+	right: 0;
+	left: 0;
+	position: fixed;
+	color: #bfe6fe;
+	text-shadow: #122944 0 2px 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/*site name*/
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+}
+
+/*login word*/
+h2{
+    text-align: center;
+    color: #00B7FF;
+}
+
+/* form and border which contains button and boxes*/
+form {
+  text-align: center;
+   width: 20%;
+   border:3px solid white;
+   padding: 10px;
+   margin: 0 auto;
+   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 24spx;
+}
+
+/*input boxes themselves*/
+input[type="text"],input[type="Password"] {
+	padding: 9px;
+	width: 90%;
+	font-size: 1.1em;
+	margin: 18px 0px;
+	border: 2px solid#EAEEF1;
+	color: #666666;
+	background:#EAEEF1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+	margin-left: 5px;
+	outline:none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+/*what happens when you hover over input boxes*/
+input[type="text"]:hover,input[type="Password"]:hover,#active{
+	background:#fff;
+	border:2px solid #00FFFF;
+	outline:none;
+}
+
+/*submit button*/
+input[type="submit"]{
+  padding: 9px;
+	width: 70%;
+	border:2px solid #609EC3;
+	outline:none;
+}
+
+/*what happens when you hover over submit button*/
+input[type="submit"]:hover,#active{
+  padding: 9px;
+	border:4px solid #00FFFF;
+	outline:none;
+}
+
+/*bottom paragraph*/
+p{
+  text-align: center;
+  color: #00B7FF;
+}
+
+/*link*/
+a{
+  text-align: center;
+  color: #00B7FF;
+}
+
+a:hover{
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,19 @@
+/*body of everything*/
+body {
+  margin: 0;
+	padding: 50px;
+  right: 0;
+	left: 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+form {
+   font-family: 'Lato', sans-serif;
+   font-size: 34px;
+   font-weight: 200;
+   text-align: left;
+}

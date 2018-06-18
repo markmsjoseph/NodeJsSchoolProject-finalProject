@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+</head>
+<body>
+<link rel='stylesheet' href='/stylesheets/sass/comment.css' />
+
+<body>
+ <h1> This is the {{info.name}} show  </h1>
+<p>
+
+   <br>
+ The artist in this show is {{info.createdBy}}
+ <br>
+  Contact the artist directly for more info: Phone ({{info.contact}}) or email ({{info.email}})
+  <br>
+   Date of Exhibition: {{info.date}}
+   <br>
+   <br>
+
+   <br>
+   <br>
+
+
+   {{#if err}}
+   <ul>
+   {{#each err.errors}}
+   <li>{{message}}</li>
+
+   {{/each}}
+   </ul>
+   {{/if}}
+</p>
+
+    <div id = "comment">
+    <h3>Comments/Concerns:</h3>
+            {{#each info.items}}
+                        <ul>
+                      {{name}}
+                        </ul>
+            {{/each}}
+
+    </div>
+
+<form method = "POST" action = "/book/{{slug}}">
+ <input type = "text" name  = "comment">
+<br>
+<input type="hidden" name = "slug" value={{slug}}>
+<br>
+<input type = "submit" value = "Comment">
+</form>
+<br>
+<br>
+<br>
+<br>
+
+
+<div id="backToHome">
+    <nav class="homePageClass">
+        <a href="{{bookingPage}}">Back to All List</a>
+    </nav>
+</div>
+
+</body>
+</head>
+</html>

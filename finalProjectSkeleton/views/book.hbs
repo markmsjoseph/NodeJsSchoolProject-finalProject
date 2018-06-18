@@ -1,0 +1,36 @@
+<link rel='stylesheet' href='/stylesheets/sass/gallery.css' />
+
+<H1> Current Exhibitions </H1>
+  <link rel='stylesheet' href='/style.css' />
+<br>
+<div id="bookingLink">
+      <a href="{{createNewListUrl}}">Book an art exhibition</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="exhibitions">
+{{#each list}}
+<li>
+<a href="/book/{{slug}}"> {{name}} by {{createdBy}}</a>
+<br>
+<br>
+</li>
+{{/each}}
+
+</div>
+
+
+<!-- <div id="HomePage">
+    <nav class="homepage">
+        <a href="{{homePage}}"><span data-hover=" Click for Homepage">Back to Homepage</span></a>
+    </nav>
+</div> -->
+<br>
+<br>
+<div id="backToHome">
+    <nav class="homePageClass">
+        <a href="{{homePage}}">Back to Homepage</a>
+    </nav>
+</div>

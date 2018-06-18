@@ -1,0 +1,49 @@
+/*body of everything*/
+body {
+  margin: 0;
+	padding: 50px;
+	background:black ;
+	right: 0;
+	left: 0;
+	color: #bfe6fe;
+	text-shadow: #122944 0 2px 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h1 {
+   color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px;
+   font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
+  }
+
+
+
+.column{
+  background-color: black;
+  width:535px;
+  height:400px;
+  padding:24px;
+  margin:auto;
+  display: inline-block;
+
+}
+
+
+p {
+  text-align: center;
+  color: #1ad1ff;
+}
+
+
+img{
+  height: 300px;
+  width: 400px;
+  padding:10px;
+  border:1px solid #262626;
+  background-color:black;
+  display:block;
+   margin:auto;
+}
+img:hover,#active{
+	border:2px solid blue;
+	outline:none;
+}

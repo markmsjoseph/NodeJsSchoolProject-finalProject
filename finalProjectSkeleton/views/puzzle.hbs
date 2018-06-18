@@ -1,0 +1,36 @@
+<link rel='stylesheet' href='/stylesheets/sass/game.css' />
+<script src="javascripts/hello.js"></script>
+
+<body>
+
+
+      {{#each list}}
+                  <ul>
+                {{name}}
+                  </ul>
+      {{/each}}
+    <br>
+      <form method = "POST" action = "/puzzle">
+       <input type = "text" name  = "comment">
+      <br>
+
+      <br>
+      <input type = "submit" value = "Comment">
+      </form>
+      <br>
+      <br>
+
+  <img src="/images/puzzle.jpg " />
+  <br>
+
+
+
+  <div id="backToHome">
+      <nav class="homePageClass">
+          <a href="{{bidPage}}">Back to puzzle</a>
+      </nav>
+  </div>
+
+
+
+</body>

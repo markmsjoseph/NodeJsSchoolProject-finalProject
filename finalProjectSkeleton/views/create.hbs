@@ -1,0 +1,40 @@
+<link rel='stylesheet' href='/stylesheets/sass/gallery.css' />
+<h1> Book an Art Exibition </h1>
+
+  {{#if err}}
+  <ul>
+  {{#each err.errors}}
+  <li>{{message}}</li>
+
+  {{/each}}
+  </ul>
+  {{/if}}
+
+
+<br>
+<br>
+<br>
+<br>
+
+  <form method = "POST" action = " ">
+<label>Your Name:</label> <input type = "text" name  = "nameOfPerson" placeholder="First Last"> <br>
+<label>Name of Show:</label>   <input type = "text" name  = "nameOfShow" placeholder="My Artshow"><br>
+  <label>Contact info (no spaces):</label> <input type = "text" name = "contactNumber" ><br>
+<label>Date Of Show:</label>   <input type = "date" name = "dateOfShow" ><br>
+  <label>Email Address:</label> <input type = "email" name = "emails" placeholder="myemail@yahoo.com">
+   <br>
+   <br>
+   <br>
+
+  <input type = "submit" value = "Submit Exhibition Request">
+  </form>
+<br>
+<br>
+<br>
+<br>
+
+  <div id="backToHome">
+      <nav class="homePageClass">
+            <a href="{{allListUrl}}">Back to book page</a>
+      </nav>
+  </div>

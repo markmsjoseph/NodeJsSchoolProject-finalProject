@@ -1,0 +1,180 @@
+/*body of everything*/
+body {
+  margin: 0;
+	padding: 50px;
+	background:#181818 ;
+	right: 0;
+	left: 0;
+	color: white;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+
+  img{
+    height: 500px;
+    width: 600px;
+    padding:10px;
+    border:1px solid white;
+    background-color:white;
+    display:block;
+    margin:auto;
+  }
+
+  h1{
+    color: white;
+    font-weight: 800;
+    line-height: 72px;
+    font-family: 'Rouge Script', cursive; font-size: 30px;
+    text-align: center;
+    margin:0 auto;
+    width:100%;
+    height:80px;
+    font-size: 45px;
+  }
+
+    p {
+      font-family: 'Rouge Script', cursive; font-size: 18px;
+      color: white;
+      text-align: center;
+            a:link {
+
+                color: blue;
+                text-align: center;
+            }
+
+            a:visited {
+                color: white;
+            }
+
+            a:hover {
+                color: yellow;
+            }
+
+            a:active {
+                color: blue;
+            }
+    }
+
+}
+
+//used for canvas css
+#game{
+  height: 478px;
+  width: 638px;
+  padding:20px;
+  border:1px solid yellow;
+  background-color:white;
+  display:block;
+  margin:auto;
+}
+
+//link to homepage
+#backToHome{
+    text-align: center;
+      nav a {
+          position: relative;
+          display: inline-block;
+          margin: 12px 20px;
+          outline: none;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 400;
+          text-shadow: 0 0 1px rgba(255,255,255,0.3);
+          font-size: 16px;
+
+      }
+
+      nav a:hover,
+      nav a:focus {
+          outline: none;
+      }
+
+      .homePageClass a {
+          padding: 0 20px;
+          height: 45px;
+          line-height: 45px;
+      }
+
+      .homePageClass a::before,
+      .homePageClass a::after {
+          position: absolute;
+          width: 45px;
+          height: 2px;
+          background: #fff;
+          content: '';
+          opacity: 0.2;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
+          pointer-events: none;
+      }
+
+      .homePageClass a::before {
+          top: 0;
+          left: 0;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          transform: rotate(90deg);
+          -webkit-transform-origin: 0 0;
+          -moz-transform-origin: 0 0;
+          transform-origin: 0 0;
+      }
+
+      .homePageClass a::after {
+          right: 0;
+          bottom: 0;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          transform: rotate(90deg);
+          -webkit-transform-origin: 100% 0;
+          -moz-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+      }
+
+      .homePageClass a:hover::before,
+      .homePageClass a:hover::after,
+      .homePageClass a:focus::before,
+      .homePageClass a:focus::after {
+          opacity: 1;
+      }
+
+      .homePageClass a:hover::before,
+      .homePageClass a:focus::before {
+          left: 50%;
+          -webkit-transform: rotate(0deg) translateX(-50%);
+          -moz-transform: rotate(0deg) translateX(-50%);
+          transform: rotate(0deg) translateX(-50%);
+      }
+
+      .homePageClass a:hover::after,
+      .homePageClass a:focus::after {
+          right: 50%;
+          -webkit-transform: rotate(0deg) translateX(50%);
+          -moz-transform: rotate(0deg) translateX(50%);
+          transform: rotate(0deg) translateX(50%);
+      }
+
+}
+
+#comment{
+
+    position:relative;
+    width:200px;
+    margin:20px;
+    padding:5px;
+    font-family:AR CENA;
+    font-size:30px;
+    color: red;
+    display: inline-block;
+
+
+}
+
+input {
+  width:250px;
+  height:30px;
+  border-radius:5px;
+  margin-left:2px;
+  padding:4px;
+  position:relative;
+}

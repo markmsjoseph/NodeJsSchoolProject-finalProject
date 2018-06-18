@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AIT ArtSite</title>
+
+  </head>
+  <body>
+
+
+{{#if user}}
+Logged in as {{user.username}}
+<br>
+<form method="POST" action="/logout">
+		<input type="submit" value="Click to logout">
+</form>
+
+{{/if}}
+
+
+    {{{body}}}
+  </body>
+</html>
