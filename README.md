@@ -1,4 +1,4 @@
-Mark Joseph
+# School Project - built using Node.js
 
 Description: My Final Project will be a website about art. It will have a login page so that there can be various different users.  A page that allows a user to play some sort of game. A page that uses a
 form submission and a page that displays artwork.
